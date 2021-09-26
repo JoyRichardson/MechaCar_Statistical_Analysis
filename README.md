@@ -41,3 +41,28 @@ Performing different levels of analysis is critical to support overall findings 
 The current manufacturing data for this design specification for each manufacturing lot individually is shown below:<br/>
 
 ![](Deliverable2b.PNG)<br/>
+
+![](Deliverable2b.PNG)<br/>
+
+## T-Tests on Suspension Coils
+
+Summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.<br/>
+
+Performing different levels of analysis is critical to support overall findings and determine any outliers/anomalies.  Supporting previous findings, there were obvious issues in the production cycle of Lot 3 which bear further investigation and correction.
+
+The t-test analysis results reveal that for all lots, the ```p-value = 0.06028``` which is outside the significance level of 5%,  which indicates there is not sufficient evidence to reject the null hypothesis. The analysis predicts that the dataset mean of 1498.78 is statistically similar to the population mean of 1500.  The t-test results are shown below:<br/>
+
+![](Deliverable3.PNG)<br/>
+
+The t-test analysis results reveal that for Lot 1, the ```p-value = 1``` which is outside the significance level of 5%,  which indicates there is not sufficient evidence to reject the null hypothesis. The analysis predicts that the dataset mean of 1500 is the same as the population mean of 1500.  The t-test results are shown below:<br/>
+
+![](Deliverable3a.PNG)<br/>
+
+The t-test analysis results reveal that for Lot 2, the ```p-value = 0.6072``` which is outside the significance level of 5%,  which indicates there is not sufficient evidence to reject the null hypothesis. The analysis predicts that the dataset mean of 1500.2 is almost the same as the population mean of 1500.  The t-test results are shown below:<br/>
+
+![](Deliverable3b.PNG)<br/>
+
+The t-test analysis results reveal that for Lot 3, the ```p-value = 0.04168``` which is inside the significance level of 5%,  which indicates there is sufficient evidence to reject the null hypothesis. The analysis predicts that the dataset mean of 1496.14 is not statistically different to the population mean of 1500.  The t-test results are shown below:<br/>
+
+![](Deliverable3c.PNG)<br/>
+
