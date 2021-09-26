@@ -13,10 +13,10 @@ A few weeks after starting his new role, Jeremy is approached by upper managemen
 Write a short summary using a screenshot of the output from the linear regression, and address the following questions:
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?<br/>
-Per the summary results, the vehicle length and vehicle ground clearance variables provide a non-random aount of variance.  Other variables have p-values that indicate a random amount of variance.<br/>
+Per the summary results, the vehicle length and vehicle ground clearance variables provide a non-random amount of variance.  Other variables have p-values that indicate a random amount of variance.<br/>
 
 * Is the slope of the linear model considered to be zero? Why or why not?<br/>
-Analysis indicates the slope of the linear model is not zero.  The ```p-value: 5.35e-11``` is much smaller than the 5% assumed significant level, indicating there is enough evidence to reject our noull hypothesis.<br/>
+Analysis indicates the slope of the linear model is not zero.  The ```p-value: 5.35e-11``` is much smaller than the 5% assumed significant level, indicating there is enough evidence to reject our null hypothesis.<br/>
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?<br/>
 This model predicts the mpg of MechaCar prototypes effectively.  The ```Multiple R-squared:  0.7149``` indicates that approximately 71% of all mpg predictions will be determined.<br/>
@@ -66,3 +66,22 @@ The t-test analysis results reveal that for Lot 3, the ```p-value = 0.04168``` w
 
 ![](Deliverable3c.PNG)<br/>
 
+## Study Design: MechaCar vs Competition
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+The data analytics team proposed a study design comparing MechaCar performance against the competition.  In today's market, fuel efficiency is a major concern.  Earlier, we performed linear regression to predict mpg and found that vehicle length and ground clearance directly affect mpg.
+
+In your description, address the following questions:
+* What metric or metrics are you going to test?<br/>
+In addition to the current six variables, other metrics to consider include trip distances (short = 0-100 miles), (long = 101-500 miles), weather variances such as rain and fog, and location such as urban vs rural.<br/>
+
+* What is the null hypothesis or alternative hypothesis?<br/>
+Null Hypothesis (Ho): Based on the above metrics, MechaCar has the same mpg than the competition.<br/>
+Alternative Hypothesis (Ha): MechaCar does NOT have the same mpg as the competition.<br/>
+
+* What statistical test would you use to test the hypothesis? And why?<br/>
+We propose a multiple linear regression model to determine the factors that have the highest correlation with the mpg.<br/>
+
+* What data is needed to run the statistical test?<br/>
+The mpg would be the dependent variable; the others (in combination) would be independent variables to determine which has the greatest impact on the mpg.<br/>
