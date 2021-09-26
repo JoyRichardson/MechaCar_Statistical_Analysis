@@ -22,3 +22,22 @@ Analysis indicates the slope of the linear model is not zero.  The ```p-value: 5
 This model predicts the mpg of MechaCar prototypes effectively.  The ```Multiple R-squared:  0.7149``` indicates that approximately 71% of all mpg predictions will be determined.<br/>
 
 ![](Deliverable1.PNG)<br/>
+
+## Summary Statistics on Suspension Coils
+
+Write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+
+* The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?<br/>
+
+The current manufacturing data meets this design specification for all manufacturing lots in total with a Var_PSI of 62.29356 which is well within the 100 PSI variance as shown below:<br/>
+
+![](Deliverable2a.PNG)<br/>
+
+Performing different levels of analysis is critical to support overall findings and determine any outliers/anomalies.<br/>
+- Lot1 has a Var_PSI of .09795918 which is significantly within the 100 PSI variance.<br/>
+- Lot2 has a Var_PSI of 7.4693878 which is significantly within the 100 PSI variance.<br/>
+- Lot3 has a Var_PSI of 170.2861224 which is NOT significantly within the 100 PSI variance. This lot is skewing the results of the total manaufacturing lots results.<br/>
+
+The current manufacturing data for this design specification for each manufacturing lot individually is shown below:<br/>
+
+![](Deliverable2b.PNG)<br/>
